@@ -91,9 +91,8 @@ Project Structure
 
 How to Run the Project Locally
 
-1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+1️⃣ Clone the Repository[
+(https://github.com/lalithasingari09-beep/Beyoncloud-frontend.git)
 
 2️⃣ Install Dependencies
 npm install
