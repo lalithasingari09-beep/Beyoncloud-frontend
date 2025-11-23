@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------
+   Global Application Styles (Reusable Classes)
+---------------------------------------------------*/
+
+/* Smooth scrolling and base font */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900 antialiased;
+}
+
+/* ----------------------------------------------
+   Reusable Input Fields (Used in Login + Create User)
+------------------------------------------------*/
+.input {
+  @apply w-full p-3 border border-gray-300 rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-blue-500
+         transition;
+}
+
+/* ----------------------------------------------
+   Buttons (Primary + Secondary)
+------------------------------------------------*/
+.btn-primary {
+  @apply w-full bg-blue-600 hover:bg-blue-700
+         text-white py-3 rounded-lg font-medium
+         transition cursor-pointer;
+}
+
+.btn-secondary {
+  @apply bg-gray-400 hover:bg-gray-500
+         text-white py-2 px-5 rounded-lg font-medium
+         transition cursor-pointer;
+}
+
+/* ----------------------------------------------
+   Card Wrapper (Login Card + Create User Card)
+------------------------------------------------*/
+.card {
+  @apply bg-white shadow-lg rounded-xl p-8;
+}
+
+/* ----------------------------------------------
+   Table Styles (Dashboard User Table)
+------------------------------------------------*/
+.table {
+  @apply w-full border-collapse bg-white shadow rounded-lg overflow-hidden;
+}
+
+.table-header {
+  @apply bg-blue-600 text-white;
+}
+
+.table-cell {
+  @apply p-3 text-left border-b;
+}
+
+/* ----------------------------------------------
+   Sidebar Styles
+------------------------------------------------*/
+.sidebar-link {
+  @apply block p-3 rounded-lg text-lg text-gray-200 
+         hover:bg-gray-700 hover:text-white transition;
+}
+
+.sidebar-active {
+  @apply bg-blue-600 text-white;
+}
+
+/* ----------------------------------------------
+   Header User Info + Logout
+------------------------------------------------*/
+.header-btn {
+  @apply text-red-600 hover:underline cursor-pointer;
+}
+
+/* ----------------------------------------------
+   Footer
+------------------------------------------------*/
+.footer {
+  @apply bg-gray-900 text-white text-center p-3 text-sm;
+}
